@@ -1,0 +1,12 @@
+pandas
+numpy
+requests
+matplotlib
+seaborn
+scikit-learn
+imbalanced-learn
+rnanorm
+mrmr-selection
+combat
+inmoose
+conorm
