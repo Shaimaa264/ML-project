@@ -1,19 +1,16 @@
 Pipeline:
-### Feature Selection and Model Development Pipeline
 
-1. **Class Imbalance Handling**:  
+1. Class Imbalance Handling:  
    At each stage, the Synthetic Minority Oversampling Technique (SMOTE) was performed on the GSE183635 dataset to handle class imbalance.  
 
-2. **Dataset Splitting**:  
+2. Dataset Splitting:  
    Samples were randomly divided into an 80% training set and a 20% testing set.  
 
-3. **Feature Preprocessing**:  
+3. Feature Preprocessing:  
    VarianceThreshold was applied to remove features with low variance.  
 
-4. **Preliminary Feature Selection**:  
-   - Minimum redundancy maximum relevance (mRMR) feature selection was used to select the top 1000 features from the initial 5434 features [27].  
-   - In the context of cancer biomarker discovery, different ranges of features selected by mRMR have been used [28], [29], [30], [31], including selecting the top 1000 features [32], [33], [34] with satisfactory performance.  
-
+4. Preliminary Feature Selection:  
+   - Minimum redundancy maximum relevance (mRMR) feature selection was used to select the top 1000 features from the initial 5434 features.
 5. **Wrapper Feature Selection**:  
    - SelectFromModel was used with RF (Random Forest) and SVM (Support Vector Machine) to further filter the 1000-selected features by mRMR, with `max_features` set to 250 [35], [36], [37].  
    - Overlapping features selected between RF and SVM were extracted.  
