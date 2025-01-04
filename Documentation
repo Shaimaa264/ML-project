@@ -29,5 +29,3 @@ Pipeline:
 Models:
    - Random Forest.
    - SVM.
-
-Dependencies:
