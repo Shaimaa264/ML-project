@@ -1,5 +1,4 @@
 Pipeline:
-
 1. Class Imbalance Handling:  
    At each stage, the Synthetic Minority Oversampling Technique (SMOTE) was performed on the GSE183635 dataset to handle class imbalance.  
 
@@ -11,19 +10,20 @@ Pipeline:
 
 4. Preliminary Feature Selection:  
    - Minimum redundancy maximum relevance (mRMR) feature selection was used to select the top 1000 features from the initial 5434 features.
-5. **Wrapper Feature Selection**:  
-   - SelectFromModel was used with RF (Random Forest) and SVM (Support Vector Machine) to further filter the 1000-selected features by mRMR, with `max_features` set to 250 [35], [36], [37].  
+
+5. Wrapper Feature Selection:  
+   - SelectFromModel was used with RF (Random Forest) and SVM (Support Vector Machine) to further filter the 1000-selected features by mRMR, with `max_features` set to 250.  
    - Overlapping features selected between RF and SVM were extracted.  
 
-6. **Feature Refinement**:  
+6. Feature Refinement:  
    - RFE-SVM (Recursive Feature Elimination with SVM) and SFS-SVM (Sequential Feature Selection with SVM) were performed on the overlapping features.  
      - For SFS, default parameters were used, which select half of the input features.  
      - For RFE, training and testing accuracy was compared against the number of selected features, and the number of features at which testing accuracy reached the maximum was selected.  
 
-7. **Final Model Development**:  
+7. Final Model Development:  
    - Overlapping features between RFE and SFS were used to train and test the final model using Random Forest (RF).  
 
-8. **External Validation**:  
+8. External Validation:  
    - The final model was externally tested on the external dataset GSE158508.  
 
 Models:
