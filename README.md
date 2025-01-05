@@ -11,3 +11,6 @@ The proposed research focuses on exploiting feature selection techniques and sup
 
 ## Additional information 
 For extra guidance, check documentations of requirements.txt file
+
+## Output 
+In additional files, Final identified features are attached as csv files and survival associated features are attached as excel file.
