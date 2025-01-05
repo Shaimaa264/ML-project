@@ -10,7 +10,7 @@ The proposed research focuses on exploiting feature selection techniques and sup
 - For R scripts, set your working directory, unzip external_validation_raw_counts.zip to your desired working directory which will give ImPlatelet_counts_raw.tsv. Load genes.csv file and ImPlatelet_counts_raw.tsv in your working directory and run the rest of code.
 
 ## Additional information 
-For extra guidance, check documentations of requirements.txt file
+For extra guidance, check documentations of dependencies in the requirements.txt file
 
 ## Output 
 In additional files, Final identified features are attached as csv files and survival associated features are attached as excel file.
