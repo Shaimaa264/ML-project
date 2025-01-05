@@ -26,6 +26,10 @@ Pipeline:
 8. External Validation:  
    - The final model was externally tested on the external dataset GSE158508.  
 
+9. Survival analysis:  
+   - Final common genes will be used as input for survival analysis to investigate their prognostic value.  
+
+
 Models:
    - Random Forest.
    - SVM.
