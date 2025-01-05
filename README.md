@@ -1,6 +1,6 @@
 # Tumor-Educated Platelets-Based Ovarian Cancer Staging Through Feature Selection Techniques and Supervised Machine Learning Models
 ## Project Overview
-The proposed research focuses on exploiting feature selection techniques and supervised machine learning models for identifying blood-based stage-specific biomarkers in platelets that discriminate healthy controls from Ovarian cancer patients with different stages.  
+The proposed research focuses on exploiting feature selection techniques and supervised machine learning models for identifying blood-based stage-specific biomarkers in platelets that discriminate healthy controls from Ovarian cancer patients with different stages. Genes selected by multiple feature selection techniques will be further investigated for their prognostic value through survival analysis.  
 
 ## Installation 
 - Install required dependencies in requirements.txt.
